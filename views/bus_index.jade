@@ -1,0 +1,28 @@
+doctype html
+html(lang='zh-CN')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width,initial-scale=1,user-scalable=0')
+    title zhanqh
+    link(rel='stylesheet', href='//cdn.bootcss.com/weui/0.4.3/style/weui.min.css')
+    link(rel='stylesheet', href='//cdn.bootcss.com/jquery-weui/0.8.0/css/jquery-weui.min.css')
+    link(rel='stylesheet', href='/css/bus_styles.css')
+  body(ontouchstart='')
+    header
+      h1 实时公交查询
+    #search_bar.weui_search_bar
+      .weui_search_outer
+        .weui_search_inner
+          i.weui_icon_search
+          form(onsubmit='return false;')
+            input#search_input.weui_search_input(type='search', name='search', placeholder='搜索', required='')
+          a#search_clear.weui_icon_clear(href='javascript:')
+        label#search_text.weui_search_text(for='search_input')
+          i.weui_icon_search
+          span 搜索
+      a#search_cancel.weui_search_cancel(href='javascript:') 取消
+    #weui_cells.weui_cells.weui_cells_access
+      // 搜索结果数据显示
+    script(src='//cdn.bootcss.com/jquery/1.11.0/jquery.min.js')
+    script(src='//cdn.bootcss.com/jquery-weui/0.8.0/js/jquery-weui.min.js')
+    script(src='/js/bus_index.js')
