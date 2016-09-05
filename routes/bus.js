@@ -13,10 +13,34 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false })
 var queryData // 查询数据，obj
 var path // post请求路径，string
 
+/* sha1加密前字符转码 */
+function utf16to8(str) {
+	var out, i, len, c;
+
+	out = ""
+	len = str.length
+	for(i = 0; i < len; i++){
+		c = str.charCodeAt(i)
+		if ((c >= 0x0001) && (c <= 0x007F)) {
+			out += str.charAt(i)
+		} else if (c > 0x07FF){
+			out += String.fromCharCode(0xE0 | ((c >> 12) & 0x0F))
+			out += String.fromCharCode(0x80 | ((c >>  6) & 0x3F))
+			out += String.fromCharCode(0x80 | ((c >>  0) & 0x3F))
+		} else {
+			out += String.fromCharCode(0xC0 | ((c >>  6) & 0x1F))
+			out += String.fromCharCode(0x80 | ((c >>  0) & 0x3F))
+		}
+	}
+	return out
+}
+/* sha1加密前字符转码 */
+
 function _calGetByName(req, res, next){
 	// 生成查询对象数据
+	var name = utf16to8(req.body.name)
 	queryData = {
-		name: req.body.name
+		name: name
 	}
 	// 设置post请求路径
 	path = '/xxt_api/bus/getByName'
