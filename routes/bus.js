@@ -13,7 +13,7 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false })
 var queryData // 查询数据，obj
 var path // post请求路径，string
 
-/* sha1加密前字符转码 */
+/* sha1加密前字符转码，utf16转utf8 */
 function utf16to8(str) {
 	var out, i, len, c;
 
