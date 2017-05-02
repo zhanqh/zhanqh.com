@@ -1,0 +1,133 @@
+body {
+    background-color: #f2f2f2;
+}
+
+.body-container {
+    padding: 0 60px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+header.header {
+    padding: 58px 0 0;
+    text-align: left;
+    border-bottom: 1px solid #bbb;
+    position: relative;
+}
+
+.site-name-wrapper {
+    margin-bottom: 40px;
+}
+
+.site-name {
+    font: bold 38px/1.12 "Times New Roman", Georgia, Times, sans-serif;
+    color: #555;
+    text-decoration: none;
+}
+
+.nav-menu {
+    margin: 10px 0 -1px;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.nav-menu a {
+    display: inline-block;
+    padding: 3px 20px 3px;
+    line-height: 30px;
+    color: #444;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.nav-menu .current {
+    border: 1px solid #bbb;
+    border-bottom-color: #f2f2f2;
+}
+
+main {
+    padding: 20px 0;
+}
+
+#tibetan {
+    margin: 10px auto;
+    width: 900px;
+    height: 600px;
+}
+
+#tibetan-car {
+    margin: 10px auto;
+    width: 900px;
+    height: 600px;
+}
+
+#used-car {
+    margin: 10px auto;
+    width: 900px;
+    height: 600px;
+}
+
+#gjcar {
+    margin: 10px auto;
+    width: 900px;
+    height: 350px;
+}
+
+#jcar {
+    margin: 25px auto;
+    width: 45%;
+    height: 350px;
+    float: left;
+}
+
+#gcar {
+    margin: 25px 10px;
+    width: 45%;
+    height: 350px;
+    float: right;
+}
+
+#rate {
+    margin: 30px auto;
+    width: 900px;
+    height: 600px;
+}
+
+#date {
+    margin: 30px auto;
+    width: 900px;
+    height: 500px;
+}
+
+
+/*@media print, screen and (max-width:480px) {
+    .body-container {
+        padding: 0 20px;
+    }
+
+    header.header {
+        padding: 58px 0 0;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+    }
+
+    .site-name-wrapper {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .nav-menu {
+        position: relative;
+        text-align: center;
+    }
+
+    .nav-menu a {
+        padding: 0 12px;
+        line-height: 27px;
+        height: 27px;
+        font-size: 13px;
+    }
+}*/
