@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width"> -->
+    <title>zhan's blog</title>
+    <link rel="stylesheet" href="./static/css/base.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <style type="text/css">
+        .qrcode img {
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+            height: 300px;
+        }
+        .qrcode p {
+            text-align: center;
+        }
+        .qrcode p a {
+            color: #2ea7e7;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body class="body-container">
+    <header class="header clearfix">
+        <div class="site-name-wrapper">
+            <a href="/" class="site-name">zhan's blog</a>
+        </div>
+        <div class="nav-menu">
+            <a href="/"><i class="fa fa-home"> 首页</i></a>
+            <a href="/data-observe.html"><i class="fa fa-line-chart"> 数据</i></a>
+            <a href="/archives"><i class="fa fa-book"> 笔记</i></a>
+            <!-- <a href=""><i class="fa fa-navicon"> 归档</i></a> -->
+            <a href="/app-bus.html" class="current"><i class="fa fa-mobile"> bus app</i></a>
+        </div>
+    </header>
+    <main>
+        <p>广州实时公交查询应用，数据与行讯通一致，可看做精简版的行讯通。满足已知路线前提下公交实时位置、下一班到达时间的查询需求。</p>
+        <div class="qrcode">
+            <img src="/static/images/qrcode.png">
+            <p>扫码访问该移动端应用</p>
+            <p>手机访问时，<a href="http://zhanqh.com/bus">点击这里</a></p>
+        </div>
+    </main>
+</body>
+</html>

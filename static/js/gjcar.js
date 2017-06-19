@@ -591,6 +591,8 @@ gcarOption = {
     // backgroundColor: '#404a59',
     title: {
         text: '德系车购买热度城市分布',
+        link: 'http://qhzhan.com/data/jcar-gcar.html',
+        target: 'self',
         subtext: '根据汽车之家车主价格频道真实成交信息统计成交地点',
         left: 'left'
     },
@@ -1013,6 +1015,8 @@ jcarOption = {
     // backgroundColor: '#404a59',
     title: {
         text: '日系车购买热度城市分布',
+        link: 'http://qhzhan.com/data/jcar-gcar.html',
+        target: 'self',
         subtext: '根据汽车之家车主价格频道真实成交信息统计成交地点',
         left: 'left'
     },

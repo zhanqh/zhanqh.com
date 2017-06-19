@@ -2,6 +2,8 @@ var rateChart = echarts.init(document.getElementById('rate'));
 rateOption = {
     title: {
         text: '全国各省份日系德系购买比例',
+        link: 'http://qhzhan.com/data/jcar-gcar.html',
+        target: 'self',
         subtext: '日系购买热度/德系购买热度，数据来源汽车之家车主价格频道',
         left: 'left'
     },

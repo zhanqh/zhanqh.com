@@ -367,6 +367,8 @@ dateOption = {
     title: {
         top: 30,
         text: '2016年每天成交统计',
+        link: 'http://qhzhan.com/data/jcar-gcar.html',
+        target: 'self',
         subtext: '基于热门日系德系汽车购买时间',
         left: 'left',
         top: 'top'

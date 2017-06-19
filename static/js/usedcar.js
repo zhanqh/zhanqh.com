@@ -70,7 +70,11 @@ usedCarOption = {
     },
     options: [
         {
-            title: {text: '热门A级轿车保值率'},
+            title: {
+                text: '热门A级轿车保值率',
+                link: 'http://qhzhan.com/data/used-car.html',
+                target: 'self'
+            },
             series: [
                 {name: '思域', data: a_civic, type: 'bar', tooltip: {trigger: 'item',formatter: "{a} <br/>{b}：{c}%"}},
                 {name: '卡罗拉', data: a_corolla, type: 'bar', tooltip: {trigger: 'item',formatter: "{a} <br/>{b}：{c}%"}},
@@ -88,7 +92,11 @@ usedCarOption = {
             }
         },
         {
-            title : {text: '热门B级轿车保值率'},
+            title : {
+                text: '热门B级轿车保值率',
+                link: 'http://qhzhan.com/data/used-car.html',
+                target: 'self'
+            },
             series : [
                 {name: '迈腾', data: b_magotan, type: 'bar', tooltip: {trigger: 'item',formatter: "{a} <br/>{b}：{c}%"}},
                 {name: '雅阁', data: b_accord, type: 'bar', tooltip: {trigger: 'item',formatter: "{a} <br/>{b}：{c}%"}},
@@ -106,7 +114,11 @@ usedCarOption = {
             }
         },
         {
-            title : {text: '热门紧凑级SUV保值率'},
+            title : {
+                text: '热门紧凑级SUV保值率',
+                link: 'http://qhzhan.com/data/used-car.html',
+                target: 'self'
+            },
             series : [
                 {name: '途观', data: suv_tiguan, type: 'bar', tooltip: {trigger: 'item',formatter: "{a} <br/>{b}：{c}%"}},
                 {name: 'CR-V', data: suv_crv, type: 'bar', tooltip: {trigger: 'item',formatter: "{a} <br/>{b}：{c}%"}},

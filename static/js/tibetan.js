@@ -178,6 +178,8 @@ tibetanOption = {
     // backgroundColor: '#404a59',
     title : {
         text: '近 5 年自驾进藏游客来源分布',
+        link: 'http://qhzhan.com/data/tibetan-tour.html',
+        target: 'self',
         subtext: '汽车之家论坛藏地之旅精选游记作者省份分布可视化展示',
         left: 'left'
     },
